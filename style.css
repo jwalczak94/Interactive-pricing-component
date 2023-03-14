@@ -420,6 +420,7 @@ video {
 }
 
 body {
+  min-height: 100vh;
   --tw-bg-opacity: 1;
   background-color: hsl(230 100% 99% / var(--tw-bg-opacity));
   font-family: Manrope, sans-serif;
@@ -446,6 +447,9 @@ header h1 {
 header p {
   font-size: clamp(0.8125rem, 0.7557rem + 0.2424vw, 0.9375rem);
   line-height: 1.77;
+}
+
+@media (hover: hover) {
 }
 
 *, ::before, ::after {
@@ -566,11 +570,6 @@ header p {
   transition-duration: 200ms;
 }
 
-.slider::-webkit-slider-thumb:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
-}
-
 .slider::-webkit-slider-thumb:active {
   --tw-bg-opacity: 1;
   background-color: hsl(174 65% 41% / var(--tw-bg-opacity));
@@ -598,11 +597,6 @@ header p {
   --tw-shadow-colored: 0px 15px 30px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-duration: 200ms;
-}
-
-.slider::-moz-range-thumb:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
 }
 
 .slider::-moz-range-thumb:active {
@@ -641,6 +635,28 @@ header p {
 #discount:checked + label {
   --tw-bg-opacity: 1;
   background-color: hsl(174 86% 45% / var(--tw-bg-opacity));
+}
+
+@media (hover: hover) {
+  .slider::-webkit-slider-thumb:hover {
+    --tw-bg-opacity: 1;
+    background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
+  }
+
+  .slider::-moz-range-thumb:hover {
+    --tw-bg-opacity: 1;
+    background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
+  }
+
+  .btn:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .discount-label:hover {
+    --tw-bg-opacity: 1;
+    background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
+  }
 }
 
 .absolute {
@@ -975,16 +991,6 @@ header p {
 
 .checked\:left-\[21px\]:checked {
   left: 21px;
-}
-
-.hover\:bg-slideBarFull:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
