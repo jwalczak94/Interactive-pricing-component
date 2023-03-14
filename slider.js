@@ -4,7 +4,16 @@ const priceValue = document.getElementById("priceValue");
 const viewsValue = document.getElementById("views");
 const sliderBar = document.querySelector(".slider");
 const discountCheckbox = document.getElementById("discount");
+const discountSpan = document.querySelector(".discount");
 
+window.addEventListener("resize", function () {
+  if (window.innerWidth <= 768) {
+    discountSpan.innerHTML = "25%";
+    console.log(window.innerWidth);
+  } else {
+    discountSpan.innerHTML = "25% discount";
+  }
+});
 let discount = 1;
 
 function getPrice(value) {
