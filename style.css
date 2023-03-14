@@ -993,16 +993,6 @@ header p {
   left: 21px;
 }
 
-.hover\:bg-slideBarFull:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 768px) {
   .md\:order-3 {
     order: 3;
